@@ -1,0 +1,8 @@
+APOLLO_KEY=service:My-Graph-r1tg9u:VulnAH86O7kEsrL9tidv2A \
+  rover subgraph publish My-Graph-r1tg9u@current \
+  --schema "path-to-your-subgraph-schema.{graphql,gql}" \
+  --name your-subgraph-name \
+  --routing-url "your-subgraph-public-endpoint"curl --request POST \
+  --header 'content-type: application/json' \
+  --url 'https://api.pre.dev/fast-spec' \
+  --data '{"query":"query { __typename }"}'
